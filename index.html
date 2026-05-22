@@ -18,7 +18,7 @@
       scroll-behavior: smooth;
     }
     section {
-      scroll-margin-top: 90px; /* Jarak aman agar judul tidak tertutup navbar */
+      scroll-margin-top: 90px; /* Jarak aman agar judul tidak tertutup navbar atas */
     }
   </style>
 </head>
@@ -215,7 +215,7 @@
           <div class="soc-icon"><i class="fab fa-instagram"></i></div>
           <div class="soc-info">
             <span class="soc-name">Instagram</span>
-            <span class="soc-handle">@anggel</span>
+            <span class="soc-handle">@anggelgl</span>
           </div>
           <i class="fas fa-arrow-right soc-arrow"></i>
         </a>
@@ -242,20 +242,20 @@
       <div class="contact-right">
         <p class="contact-sub">Send a message</p>
 
-        <form class="contact-form" onsubmit="alert('Pesan simulasi statis berhasil dikirim!'); return false;">
+        <form action="https://formspree.io/f/xoqgkyre" method="POST" class="contact-form">
           <div class="form-row">
             <div class="form-group">
               <label>Nama</label>
-              <input type="text" name="name" placeholder="Nama kamu" required="">
+              <input type="text" name="name" placeholder="Nama kamu" required>
             </div>
             <div class="form-group">
               <label>Email</label>
-              <input type="email" name="email" placeholder="email@kamu.com" required="">
+              <input type="email" name="_replyto" placeholder="email@kamu.com" required>
             </div>
           </div>
           <div class="form-group">
             <label>Pesan</label>
-            <textarea name="message" rows="5" placeholder="Tulis pesanmu di sini..." required=""></textarea>
+            <textarea name="message" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
           </div>
           <button type="submit" class="btn-primary btn-block">
             <i class="fas fa-paper-plane"></i> &nbsp;Kirim Pesan
