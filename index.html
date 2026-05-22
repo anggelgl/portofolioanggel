@@ -6,12 +6,20 @@
   <title>Anggel Agustina Gultom — Portfolio</title>
   
   <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="stylesheet" href="./index_files/all.min.css">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet"> 
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth; /* Efek scroll meluncur lancar */
+    }
+    section {
+      scroll-margin-top: 90px; /* Jarak aman agar judul tidak tertutup navbar */
+    }
+  </style>
 </head>
 <body>
 
@@ -46,7 +54,7 @@
     <div class="avatar-ring ring-1"></div>
     <div class="avatar-ring ring-2"></div>
     
-    <img src="./static/images/photo.jpeg" alt="Anggel" class="hero-photo" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400'">
+    <img src="./static/me.jpeg" alt="Anggel" class="hero-photo">
   </div>
 
   <span class="star s1">✦</span>
@@ -64,7 +72,7 @@
         <p class="about-text">
           Saya adalah seorang mahasiswi yang sedang menempuh pendidikan di Fakultas
           Teknik Elektro Program Studi S1 Teknik Telekomunikasi di Telkom University.
-          Saya memiliki semangat tinggi and selalu berusaha untuk mengembangkan potensi diri.
+          Saya memiliki semangat tinggi dan selalu berusaha untuk mengembangkan potensi diri.
           Saya memiliki minat di bidang Teknik Telekomunikasi karena bidang tersebut dapat
           mempelajari, mengembangkan, dan merancang perangkat telekomunikasi yang sangat
           diperlukan di masa sekarang dan di masa depan.
@@ -201,7 +209,7 @@
     <div class="contact-grid">
       <div class="contact-left">
         <p class="contact-sub">Find me on</p>
-        
+
         <a href="https://www.instagram.com/anggelgl?igsh=MW0wNzljMzM4dHUydw==" target="_blank" class="social-btn instagram">
           <div class="soc-icon"><i class="fab fa-instagram"></i></div>
           <div class="soc-info">
@@ -210,7 +218,7 @@
           </div>
           <i class="fas fa-arrow-right soc-arrow"></i>
         </a>
-        
+
         <a href="https://www.linkedin.com/in/anggel-agustina-gultom-46b0333a9" target="_blank" class="social-btn linkedin">
           <div class="soc-icon"><i class="fab fa-linkedin-in"></i></div>
           <div class="soc-info">
@@ -219,7 +227,7 @@
           </div>
           <i class="fas fa-arrow-right soc-arrow"></i>
         </a>
-        
+
         <a href="mailto:anggelagustina48@gmail.com" class="social-btn email-btn">
           <div class="soc-icon"><i class="fas fa-envelope"></i></div>
           <div class="soc-info">
@@ -233,7 +241,8 @@
       <div class="contact-right">
         <p class="contact-sub">Send a message</p>
 
-        <form class="contact-form" onsubmit="alert('Pesan simulasi statis berhasil dikirim!'); return false;">
+        <form method="POST" class="contact-form">
+          <input type="hidden" name="csrfmiddlewaretoken" value="TlBpoShi2Ydr2D4DDPgX89JFHnbOvd2MaeooKmmC71D2vxvgGStwPAoTXuABATNn">
           <div class="form-row">
             <div class="form-group">
               <label>Nama</label>
@@ -258,7 +267,7 @@
 </section>
 
 <footer class="footer">
-  <p>© 2026 <span class="gradient-text">Anggel Agustina Gultom</span> &nbsp;·&nbsp; Handcrafted Portfolio ✨</p>
+  <p>© 2026 <span class="gradient-text">Anggel Agustina Gultom</span> &nbsp;·&nbsp; Made with Django 🐍</p>
 </footer>
 
 <script>
@@ -294,4 +303,4 @@
 </script>
 
 </body>
-</html> 
+</html>
